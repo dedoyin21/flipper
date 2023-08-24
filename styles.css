@@ -1,0 +1,122 @@
+body{
+    background-color: #F1f5f8;
+}
+
+.nav-center{
+display: flex;
+flex-direction: row; 
+justify-content: space-between;
+border: 2px solid white;
+background-color: white;
+padding: 0 20rem 0 20rem;
+box-shadow: 0px 0px 10px 0px rgb(88, 86, 86);
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row; 
+}
+ul{
+    margin-right: 6rem;
+    margin-top: 1rem;
+}
+
+ul li{
+    margin-left: 2rem;
+    list-style: none;
+    text-decoration: none; 
+}
+
+a{
+    text-decoration-line: none;
+    color: rgb(88, 86, 86);
+}
+
+h4{
+    margin-left: 5rem;
+    color: rgb(62, 62, 245);
+}
+
+.container{
+    display: block;
+    flex-direction: column; 
+    margin: 10rem 25rem 0 25rem;
+} 
+
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+    font-size: 2.7rem;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+.color{
+    color: rgb(62, 62, 245);
+}
+
+.btn{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 1rem 0 0 630px; 
+    border: 2px solid rgb(70, 69, 69);
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    border-radius: 7px;
+    font-weight: 50;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover{
+    color: white;
+    background-color: rgb(123, 123, 250);
+}
+
+
+/* Media Query for Phones */
+@media (max-width: 480px) {
+    .nav-center {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    .nav-center {
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .nav-links {
+        display: none;
+        text-align: center;
+    }
+    
+    .nav-links.active {
+        display: block;
+        margin-top: 1rem;
+    }
+    
+    .container {
+        margin: 5rem 1rem 0 1rem;
+    }
+    
+    .btn {
+        margin: 1rem 0rem 0 8rem;
+    }
+
+    h2{
+    font-weight: 50;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    }
+}
